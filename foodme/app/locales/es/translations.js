@@ -9,6 +9,8 @@ export default {
 	//
 	// "key.with.interpolation": "Text with {{anInterpolation}}"
 
+	"searchByName": "Buscar por nombre",
+
 	"about": "Sobre nosotros",
 
 	"cuisine": "Cocina",
