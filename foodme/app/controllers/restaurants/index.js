@@ -42,4 +42,10 @@ export default Controller.extend({
 
   filterValue: null,
 
+  actions: {
+    cleanFilters() {
+      this.get('filterCuisins').clear();
+      this.set('filterValue', null);
+    }
+  }
 });
