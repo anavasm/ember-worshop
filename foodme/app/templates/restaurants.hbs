@@ -6,12 +6,12 @@
       </div>
       <div class="panel-body">
         <ul>
-          {{#each model as |resturant| }}
+          {{#each model as |restaurant| }}
 
           <div class="media">
-            <a class="media-left"><img class="media-object" src="#"></a>
+            <a class="media-left"><img class="media-object" src={{restaurant-img restaurant.id}}></a>
             <div class="media-body">
-              <h4 class="media-heading">{{resturant.name}}</h4>
+              <h4 class="media-heading">{{restaurant.name}}</h4>
               {{restaurant.description}}
             </div>
           </div>
