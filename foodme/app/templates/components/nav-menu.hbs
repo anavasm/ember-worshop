@@ -19,10 +19,23 @@
       {{! Menu links}}
       <ul class="nav navbar-nav">
         {{#each menuLinks as |link|}}
-        <li>{{link-to link.name link.url}}</li>
+        <li>{{link-to (t link.label) link.url}}</li>
         {{/each}}
       </ul>
+      {{! ChangeLanguage}}
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          {{#power-select
+                        selected=selectedLanguage
+                        options=languages
+                        class='dropdown'
+                        onchange=(action (mut selectedLanguage))
+                        as |language|}}
+          {{language.name}}
+          {{/power-select}}
+        </li>
+      </ul>
     </div>
-    {{!@TODO cambio de idioma }}
+
   </div>
 </nav>
