@@ -6,8 +6,10 @@ const Router = EmberRouter.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
-  this.route('restaurants');
+Router.map(function () {
+  this.route('restaurants', function () {
+    this.route('detail', { path: 'detail/:id' });
+  });
   this.route('about');
 });
 
