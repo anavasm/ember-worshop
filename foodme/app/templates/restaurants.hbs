@@ -1,0 +1,23 @@
+<div class="row-fluid">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Restaurantes encontrados</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {{#each model as |resturant| }}
+
+          <div class="media">
+            <a class="media-left"><img class="media-object" src="#"></a>
+            <div class="media-body">
+              <h4 class="media-heading">{{resturant.name}}</h4>
+              {{restaurant.description}}
+            </div>
+          </div>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
