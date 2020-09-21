@@ -2,8 +2,9 @@ import Controller from '@ember/controller';
 import { A } from '@ember/array';
 import { computed } from '@ember/object';
 import { isPresent } from '@ember/utils';
+import OpenMapMixin from 'foodme/mixins/open-map';
 
-export default Controller.extend({
+export default Controller.extend(OpenMapMixin, {
   cuisineOptions: computed('model', function () {
     return this.get('model').mapBy('cuisine').filter((elem, pos, arr) => arr.indexOf(elem) === pos).map((cuisine) => {
       return {

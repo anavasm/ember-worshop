@@ -9,6 +9,16 @@ export default {
 	//
 	// "key.with.interpolation": "Text with {{anInterpolation}}"
 
+	"description": "Description",
+
+	"location": "Location",
+
+	"openingHours": 'Opening Hours',
+
+	"menu": "Menu",
+
+	"viewMap": 'View map',
+
 	"clear": "Clear",
 
 	"searchByName": "Search by Name",
